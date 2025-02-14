@@ -3,7 +3,7 @@
 Le **tableau de bord interactif** permet d’explorer les **dynamiques démographiques mondiales** à travers plusieurs visualisations basées sur des données de la **Banque Mondiale**.  
 
 ## 🌐 Application en ligne  
-Accédez au **tableau de bord en ligne** ici : [ici](https://example.com)  
+Accédez au **tableau de bord en ligne** [ici](https://example.com)  
 
 ## 🖼️ Aperçu du tableau de bord  
 Voici un aperçu du tableau de bord :  
