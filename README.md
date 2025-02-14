@@ -22,10 +22,21 @@ Découvrez les différentes visualisations disponibles dans le tableau de bord :
 | Type de graphique            | Sélection utilisateur                        | Données utilisées                                       | Objectif                                                |
 |------------------------------|----------------------------------------------|---------------------------------------------------------|---------------------------------------------------------|
 | **Carte Choroplèthe**         | Pays, indicateur, année                      | Tous les indicateurs                                     | Visualisation géographique                               |
-| **Série Temporelle**          | Plusieurs pays, plusieurs indicateurs       | espérance_de_vie_modif, taux_fertilite_femme_modif, PIB_modif, migration_nette_modif | Comparaison d’indicateurs dans le temps                 |
-| **Histogramme**               | Plusieurs pays, indicateur                  | taux_fertilite_femme_modif, esperance_de_vie_modif       | Comparaison de pays sur un indicateur                   |
-| **Diagramme en Barres**       | Pays, année                                 | pop_de_0_14_modif, pop_de_15_64_modif, pop_de_65_et_plus_modif | Répartition par âge                                     |
-| **Diagramme en Anneau (Donut Chart)** | Continent, plusieurs indicateurs        | croissance_de_la_pop_modif, PIB_modif, migration_nette_modif, pop_refugie_modif | Répartition des indicateurs sélectionnés par continent |
+| **Série Temporelle**          | Plusieurs pays, plusieurs indicateurs       | espérance de vie , taux fertilite, PIB par habitant ($ US courants) , migration nette | Comparaison d’indicateurs dans le temps                 |
+| **Histogramme**               | Plusieurs pays, indicateur                  | taux fertilite femme , esperance de vie brut       | Comparaison de pays sur un indicateur                   |
+| **Diagramme en Barres**       | Pays, année                                 | popoulation age de 0 a 14 ans, population de 15 a 64 , population de 65 et plus | Répartition par âge                                     |
+| **Diagramme en Anneau (Donut Chart)** | Continent, plusieurs indicateurs        | croissance de la population , PIB par habitant ($ US courants), migration nette , population refugie  | Répartition des indicateurs sélectionnés par continent |
+
+
+
+| Type de graphique            | Sélection utilisateur                        | Données utilisées                                       | Objectif                                                |
+|------------------------------|----------------------------------------------|---------------------------------------------------------|---------------------------------------------------------|
+| **Carte Choroplèthe**         | Pays, indicateur, année                      | Tous les indicateurs                                     | Visualisation géographique                               |
+| **Série Temporelle**          | Plusieurs pays, plusieurs indicateurs       | Espérance de vie, taux de fertilité, PIB par habitant (USD courants), migration nette | Comparaison d’indicateurs dans le temps                 |
+| **Histogramme**               | Plusieurs pays, indicateur                  | Taux de fertilité des femmes, espérance de vie brut      | Comparaison de pays sur un indicateur                   |
+| **Diagramme en Barres**       | Pays, année                                 | Population âgée de 0 à 14 ans, population de 15 à 64 ans, population de 65 ans et plus | Répartition par âge                                     |
+| **Diagramme en Anneau (Donut Chart)** | Continent, plusieurs indicateurs        | Croissance de la population, PIB par habitant (USD courants), migration nette, population réfugiée | Répartition des indicateurs sélectionnés par continent |
+
 
 ## 🚀 Technologies utilisées  
 - **Python** (Dash, Plotly, Pandas)  
