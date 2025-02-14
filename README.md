@@ -1,6 +1,6 @@
 # 🌍 World Demographic Trends  
 
-Ce projet propose un **tableau de bord interactif** permettant d’explorer les **dynamiques démographiques mondiales** à travers plusieurs visualisations basées sur des données de la **Banque Mondiale**.  
+Le **tableau de bord interactif** permet d’explorer les **dynamiques démographiques mondiales** à travers plusieurs visualisations basées sur des données de la **Banque Mondiale**.  
 
 ## 🌐 Application en ligne  
 Accédez au **tableau de bord en ligne** ici : [ici](https://example.com)  
