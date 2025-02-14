@@ -1,8 +1,3 @@
----
-title: "World Demographic Trends"
-output: github_document
----
-
 # 🌍 World Demographic Trends  
 
 Ce projet propose un **tableau de bord interactif** permettant d’explorer les **dynamiques démographiques mondiales** à travers plusieurs visualisations basées sur des données de la **Banque Mondiale**.  
@@ -12,8 +7,7 @@ Grâce à cet outil, il est possible de :
 
 ✅ **Analyser les tendances démographiques** : suivre l’évolution de la **fertilité**, de l’**espérance de vie** et de la **croissance de la population** à travers différents pays et périodes.  
 ✅ **Comparer les indicateurs entre pays et continents** : visualiser les **écarts et similitudes** en matière de **migration**, de **répartition par âge** et d’**urbanisation**.  
-✅ **Évaluer l’impact des dynamiques démographiques sur la santé publique** : identifier les **défis liés au vieillissement**, aux **systèmes de santé** et aux **besoins en infrastructures sanitaires**.  
-
+✅ **Évaluer l’impact des dynamiques démographiques sur la santé publique** : identifier les **défis liés au vieillissement** et aux **systèmes de santé**.
 ## 📊 Indicateurs clés  
 Les principaux indicateurs étudiés incluent :  
 - **Fertilité** (nombre moyen d’enfants par femme)  
