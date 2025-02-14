@@ -18,15 +18,7 @@ Grâce à cet outil, il est possible de :
 
 ## 🗺️ Graphiques et Sélections Utilisateur  
 
-Découvrez les différentes visualisations disponibles dans le tableau de bord : 
-| Type de graphique            | Sélection utilisateur                        | Données utilisées                                       | Objectif                                                |
-|------------------------------|----------------------------------------------|---------------------------------------------------------|---------------------------------------------------------|
-| **Carte Choroplèthe**         | Pays, indicateur, année                      | Tous les indicateurs                                     | Visualisation géographique                               |
-| **Série Temporelle**          | Plusieurs pays, plusieurs indicateurs       | espérance de vie , taux fertilite, PIB par habitant ($ US courants) , migration nette | Comparaison d’indicateurs dans le temps                 |
-| **Histogramme**               | Plusieurs pays, indicateur                  | taux fertilite femme , esperance de vie brut       | Comparaison de pays sur un indicateur                   |
-| **Diagramme en Barres**       | Pays, année                                 | popoulation age de 0 a 14 ans, population de 15 a 64 , population de 65 et plus | Répartition par âge                                     |
-| **Diagramme en Anneau (Donut Chart)** | Continent, plusieurs indicateurs        | croissance de la population , PIB par habitant ($ US courants), migration nette , population refugie  | Répartition des indicateurs sélectionnés par continent |
-
+Découvrez les différentes visualisations disponibles dans le tableau de bord :
 
 
 | Type de graphique            | Sélection utilisateur                        | Données utilisées                                       | Objectif                                                |
