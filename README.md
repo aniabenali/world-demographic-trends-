@@ -7,7 +7,8 @@ Accédez au **tableau de bord en ligne** [ici](https://example.com)
 
 ## 🖼️ Aperçu du tableau de bord  
 Voici un aperçu du tableau de bord :  
-![Capture d’écran du dashboard](img_readme/dashboard_main.jpg){out.width="50%"}
+
+![Capture d’écran du dashboard](img_readme/dashboard_main.jpg){out.width="300px" out.height="200px"}
 
 ## 🎯 Objectifs  
 Grâce à cet outil, il est possible de :  
