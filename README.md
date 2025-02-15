@@ -46,7 +46,7 @@ pip install dash plotly pandas
 python app.py
 ```
 
-# Deployement
+#  🖥️ Deployement
 
 ## 1. Créer un Compte Render
 
