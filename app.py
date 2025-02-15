@@ -615,8 +615,7 @@ def toggle_sidebar(n_clicks, nav_class, main_class):
     else:
         return "nav-bar", "main-content", "⏩ Masquer le menu"
 
+server = app.server
 if __name__ == '__main__':
     app.run_server(debug=cfg['debug'])
 
-if __name__ == '__main__':
-    app.run_server(debug=cfg['debug'])
