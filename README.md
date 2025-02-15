@@ -8,7 +8,7 @@ Accédez au **tableau de bord en ligne** [ici](https://world-demographic-trends-
 ## 🖼️ Aperçu du tableau de bord  
 Voici un aperçu du tableau de bord :  
 
-<img src="img_readme/dashboard_main.jpg" alt="Capture d’écran du dashboard" width="500" />
+<img src="img_readme/dashboard_main.png" alt="Capture d’écran du dashboard" width="500" />
 
 ## 🎯 Objectifs  
 Grâce à cet outil, il est possible de :  
