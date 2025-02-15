@@ -1,0 +1,204 @@
+Continent,Country
+AFRIQUE,Algérie
+AFRIQUE,Angola
+AFRIQUE,Bénin
+AFRIQUE,Botswana
+AFRIQUE,Burkina Faso
+AFRIQUE,Burundi
+AFRIQUE,Cameroun
+AFRIQUE,République centrafricaine
+AFRIQUE,Tchad
+AFRIQUE,Comores
+AFRIQUE,"Congo, République démocratique du"
+AFRIQUE,"Congo, République du"
+AFRIQUE,Djibouti
+AFRIQUE,"Égypte, République arabe d'"
+AFRIQUE,Guinée équatoriale
+AFRIQUE,Érythrée
+AFRIQUE,Eswatini
+AFRIQUE,Éthiopie
+AFRIQUE,Gabon
+AFRIQUE,Gambie
+AFRIQUE,Ghana
+AFRIQUE,Guinée
+AFRIQUE,Guinée-Bissau
+AFRIQUE,Côte d'Ivoire
+AFRIQUE,Kenya
+AFRIQUE,Lesotho
+AFRIQUE,Libéria
+AFRIQUE,Libye
+AFRIQUE,Madagascar
+AFRIQUE,Malawi
+AFRIQUE,Mali
+AFRIQUE,Mauritanie
+AFRIQUE,Maurice
+AFRIQUE,Maroc
+AFRIQUE,Mozambique
+AFRIQUE,Namibie
+AFRIQUE,Niger
+AFRIQUE,Nigéria
+AFRIQUE,Rwanda
+AFRIQUE,Sao Tomé-et-Principe
+AFRIQUE,Sénégal
+AFRIQUE,Seychelles
+AFRIQUE,Sierra Leone
+AFRIQUE,Somalie
+AFRIQUE,Afrique du Sud
+AFRIQUE,Soudan du Sud
+AFRIQUE,Soudan
+AFRIQUE,Tanzanie
+AFRIQUE,Togo
+AFRIQUE,Tunisie
+AFRIQUE,Ouganda
+AFRIQUE,Zambie
+AFRIQUE,Zimbabwe
+ASIE,Afghanistan
+ASIE,Bahreïn
+ASIE,Bangladesh
+ASIE,Bhoutan
+ASIE,Brunéi Darussalam
+ASIE,Cambodge
+ASIE,Chine
+ASIE,Géorgie
+ASIE,"Chine, RAS de Hong Kong"
+ASIE,Inde
+ASIE,Indonésie
+ASIE,"Iran, République islamique d'"
+ASIE,Iraq
+ASIE,Israël
+ASIE,Japon
+ASIE,Jordanie
+ASIE,Kazakhstan
+ASIE,"Corée, République démocratique de"
+ASIE,"Corée, République de"
+ASIE,Koweït
+ASIE,République kirghize
+ASIE,République démocratique populaire lao
+ASIE,Liban
+ASIE,"Région administrative spéciale de Macao, Chine"
+ASIE,Malaisie
+ASIE,Maldives
+ASIE,Mongolie
+ASIE,Myanmar
+ASIE,Népal
+ASIE,Oman
+ASIE,Pakistan
+ASIE,Philippines
+ASIE,Qatar
+ASIE,Arabie saoudite
+ASIE,Singapour
+ASIE,Sri Lanka
+ASIE,République arabe syrienne
+ASIE,Tadjikistan
+ASIE,Thaïlande
+ASIE,Timor-Leste
+ASIE,Turquie
+ASIE,Turkménistan
+ASIE,Émirats arabes unis
+ASIE,Ouzbékistan
+ASIE,Viet Nam
+ASIE,"Yémen, Rép. du"
+EUROPE,Albanie
+EUROPE,Andorre
+EUROPE,Autriche
+EUROPE,Bélarus
+EUROPE,Belgique
+EUROPE,Bosnie-Herzégovine
+EUROPE,Bulgarie
+EUROPE,Croatie
+EUROPE,Chypre
+EUROPE,République tchèque
+EUROPE,Danemark
+EUROPE,Estonie
+EUROPE,Finlande
+EUROPE,France
+EUROPE,Allemagne
+EUROPE,Grèce
+EUROPE,Hongrie
+EUROPE,Islande
+EUROPE,Irlande
+EUROPE,Italie
+EUROPE,Lettonie
+EUROPE,Liechtenstein
+EUROPE,Lituanie
+EUROPE,Luxembourg
+EUROPE,Malte
+EUROPE,Moldova
+EUROPE,Monaco
+EUROPE,Monténégro
+EUROPE,Pays-Bas
+EUROPE,Macédoine du Nord
+EUROPE,Norvège
+EUROPE,Pologne
+EUROPE,Portugal
+EUROPE,Roumanie
+EUROPE,Fédération de Russie
+EUROPE,Saint-Marin
+EUROPE,Serbie
+EUROPE,République slovaque
+EUROPE,Slovénie
+EUROPE,Espagne
+EUROPE,Suède
+EUROPE,Suisse
+EUROPE,Ukraine
+EUROPE,Royaume-Uni
+AMÉRIQUE DU NORD,Antigua-et-Barbuda
+AMÉRIQUE DU NORD,Bahamas
+AMÉRIQUE DU NORD,Barbade
+AMÉRIQUE DU NORD,Belize
+AMÉRIQUE DU NORD,Bermudes
+AMÉRIQUE DU NORD,Canada
+AMÉRIQUE DU NORD,Costa Rica
+AMÉRIQUE DU NORD,Cuba
+AMÉRIQUE DU NORD,Curacao
+AMÉRIQUE DU NORD,Dominique
+AMÉRIQUE DU NORD,République dominicaine
+AMÉRIQUE DU NORD,El Salvador
+AMÉRIQUE DU NORD,Grenade
+AMÉRIQUE DU NORD,Guatemala
+AMÉRIQUE DU NORD,Haïti
+AMÉRIQUE DU NORD,Honduras
+AMÉRIQUE DU NORD,Jamaïque
+AMÉRIQUE DU NORD,Mexique
+AMÉRIQUE DU NORD,Nicaragua
+AMÉRIQUE DU NORD,Panama
+AMÉRIQUE DU NORD,Porto Rico
+AMÉRIQUE DU NORD,Saint-Kitts-et-Nevis
+AMÉRIQUE DU NORD,Sainte-Lucie
+AMÉRIQUE DU NORD,Saint-Martin (fr)
+AMÉRIQUE DU NORD,Sint Maarten (Dutch part)
+AMÉRIQUE DU NORD,Trinité-et-Tobago
+AMÉRIQUE DU NORD,Îles Turques-et-Caïques
+AMÉRIQUE DU NORD,États-Unis
+AMÉRIQUE DU NORD,Îles Vierges (EU)
+AMÉRIQUE DU SUD,Argentine
+AMÉRIQUE DU SUD,Bolivie
+AMÉRIQUE DU SUD,Brésil
+AMÉRIQUE DU SUD,Chili
+AMÉRIQUE DU SUD,Colombie
+AMÉRIQUE DU SUD,Équateur
+AMÉRIQUE DU SUD,Guyana
+AMÉRIQUE DU SUD,Paraguay
+AMÉRIQUE DU SUD,Pérou
+AMÉRIQUE DU SUD,Suriname
+AMÉRIQUE DU SUD,Uruguay
+AMÉRIQUE DU SUD,Venezuela
+OCÉANIE,Samoa américaines
+OCÉANIE,Australie
+OCÉANIE,Fidji
+OCÉANIE,Polynésie française
+OCÉANIE,Guam
+OCÉANIE,Kiribati
+OCÉANIE,Îles Marshall
+OCÉANIE,"Micronésie, États fédérés de"
+OCÉANIE,Nauru
+OCÉANIE,Nouvelle-Calédonie
+OCÉANIE,Nouvelle-Zélande
+OCÉANIE,Mariannes
+OCÉANIE,Palaos
+OCÉANIE,Papouasie-Nouvelle-Guinée
+OCÉANIE,Samoa
+OCÉANIE,Îles Salomon
+OCÉANIE,Tonga
+OCÉANIE,Tuvalu
+OCÉANIE,Vanuatu
