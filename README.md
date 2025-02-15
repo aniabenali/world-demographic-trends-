@@ -44,3 +44,43 @@ pip install dash plotly pandas
 
 # Lancer l'application Dash
 python app.py
+```
+
+# Deployement
+
+## 1. Créer un Compte Render
+
+- Allez sur [Render](https://render.com).
+- Inscrivez-vous et créez un service web.
+
+## 2. Connecter Votre Dépôt GitHub
+
+- Sélectionnez le dépôt contenant votre application Dash.
+
+## 3. Configurer Render
+
+- **Environnement**: Python
+- **Commande de Build**: `pip install -r requirements.txt`
+- **Commande de Lancement**: `gunicorn app:server`
+- **Variables d'Environnement**: Ajouter `PORT=8080`
+
+## 4. Déployer l'Application
+
+- Cliquez sur **Deploy Web Service**.
+
+## 5. Mettre à Jour l'Application
+
+- Modifiez votre code.
+- Exécutez `git push`.
+- Render déploie automatiquement votre application.
+
+## 📌 Dépendances (requirements.txt)
+
+```text
+dash==2.18.2
+pandas==2.2.3
+plotly==5.24.1
+pycountry==24.6.1
+pycountry_convert==0.7.2
+flask==2.2.5
+gunicorn==21.2.0
