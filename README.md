@@ -1,3 +1,6 @@
+#Rania
+#Sirina
+
 # 🌍 World Demographic Trends  
 
 Le **tableau de bord interactif** permet d’explorer les **dynamiques démographiques mondiales** à travers plusieurs visualisations basées sur des données de la **Banque Mondiale**.  
