@@ -6,8 +6,6 @@ Le **tableau de bord interactif** permet d’explorer les **dynamiques démograp
 Accédez au **tableau de bord en ligne** [ici](https://world-demographic-trends-xcxv.onrender.com/)  
 
 ## 🖼️ Aperçu du tableau de bord  
-Voici un aperçu du tableau de bord :  
-
 <img src="img_readme/dashboard_main.png" alt="Capture d’écran du dashboard" width="500" />
 
 ## 🎯 Objectifs  
