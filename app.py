@@ -56,8 +56,6 @@ app = dash.Dash(__name__, suppress_callback_exceptions=True,assets_folder="asset
 # Layout de l'application
 app.layout = html.Div(id="app-container",className="container", children=[
     html.Button("☰", id="toggle-nav", n_clicks=0, className="toggle-button"),
-    html.H1("Évolution démographique mondiale", id="main-title", className="main-title")
-    ,
     # Nav-Bar (20% de la largeur, s'étend sur toute la hauteur)
     html.Div(id="nav-bar",className="nav-bar", children=[
         html.H3("Paramètres", className="nav-title"),
@@ -111,6 +109,7 @@ app.layout = html.Div(id="app-container",className="container", children=[
 
     # Zone principale (80% de la largeur)
     html.Div(id="main-content",className="main-content", children=[
+        html.H1("Évolution démographique mondiale", id="main-title", className="main-title"),
         # En haut : Carte choroplèthe et histogramme/série temporelle
         html.Div(className="top-section", children=[
             # Carte choroplèthe
@@ -619,5 +618,5 @@ def toggle_sidebar(n_clicks, nav_class, main_class):
 
 server = app.server
 if __name__ == '__main__':
-    app.run_server(debug=cfg['debug'])
+    app.run_server(debug=False)
 
