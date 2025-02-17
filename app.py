@@ -51,11 +51,13 @@ dropdown_indicators["pop_de_0_14_modif"] = data.get("pop_de_0_14_modif")  # ✅ 
 
 # Initialisation de l'application Dash
 app = dash.Dash(__name__, suppress_callback_exceptions=True,assets_folder="assets")
-app.title = "Évolution démographique mondiale"
+#app.title = "Évolution démographique mondiale"
 
 # Layout de l'application
 app.layout = html.Div(id="app-container",className="container", children=[
     html.Button("☰", id="toggle-nav", n_clicks=0, className="toggle-button"),
+    html.H1("Évolution démographique mondiale", id="main-title", className="main-title")
+    ,
     # Nav-Bar (20% de la largeur, s'étend sur toute la hauteur)
     html.Div(id="nav-bar",className="nav-bar", children=[
         html.H3("Paramètres", className="nav-title"),
@@ -415,7 +417,7 @@ app.layout = html.Div(id="app-container",className="container", children=[
         html.Div(className="top-section", children=[
             # Carte choroplèthe
             html.Div(className="graph-wrapper", children=[
-                dcc.Graph(id='choropleth-map', className="graph", style={'height': '280px', 'width': '97%'})
+                dcc.Graph(id='choropleth-map', className="graph", style={'height': '300px', 'width': '98%'})
             ]),
             # Histogramme/série temporelle
             html.Div(className="graph-wrapper", children=[

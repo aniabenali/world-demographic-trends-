@@ -1,3 +1,5 @@
+
+
 .container {
     display: flex;
     height: 100vh; /* ✅ Assure que tout prend la hauteur de l'écran */
@@ -5,12 +7,13 @@
     background-color: #1E2B38;
     color: white;
     overflow: hidden;
+    gap: 0px 
 }
 /* ✅ Nav-Bar (20% de la largeur, s'étend sur toute la hauteur) */
 .nav-bar {
     width: 20%;
-    min-width: 250px; /* ✅ Empêche le menu de devenir trop large */
-    max-width: 250px; /* ✅ Garde une largeur fixe */
+    min-width: 180px; /* ✅ Empêche le menu de devenir trop large */
+    max-width: 180px; /* ✅ Garde une largeur fixe */
     height: 100vh; /* ✅ Utilise toute la hauteur de l'écran */
     background-color: #2C3E50;
     padding: 20px;
@@ -61,19 +64,11 @@
 }
 
 /* ✅ Zone principale (80% de la largeur) */
-.main-content {
-    width: 80%;
-    padding: 20px;
-    flex: 1;  /* Utilise tout l'espace disponible */
-    transition: width 0.3s ease-in-out;
-    overflow: hidden;
-     
-}
 
 /* ✅ Section en haut (carte choroplèthe et histogramme/série temporelle) */
 .top-section {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     margin-bottom: 10px;
     justify-content: space-between; /* Évite le débordement */
     align-items: stretch;
@@ -220,13 +215,12 @@
 
 .top-section, .bottom-section {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     justify-content: space-evenly;
     align-items: stretch;
     width: 100%;
     overflow: hidden;
 }
-
 
 .toggle-button {
     position: absolute;
@@ -245,3 +239,20 @@
     background-color: #FFA500;
 }
 
+.nav-bar, .main-content {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    margin: 15px 0; /* Ajustement pour le voir */
+    padding: 10px;
+    background-color: #2C3E50; /* Couleur de fond pour le démarquer */
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+}

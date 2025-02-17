@@ -67,7 +67,7 @@ def aggregate_by_continent(df):
     return df.groupby("Continent").sum()
 
 
-import plotly.express as px
+
 
 def generate_choropleth(data, indicator, year, selected_country=None):
     """
@@ -246,7 +246,7 @@ def generate_time_series(data, countries, indicators):
                 color_idx += 1  # Incrémenter l'index couleur
 
     fig.update_layout(
-        title="Série temporelle des indicateurs",
+        title="Taux et valeurs des indicateurs",
         xaxis_title="Année",
         yaxis_title="Valeur",
         template="plotly_dark",
@@ -258,6 +258,8 @@ def generate_time_series(data, countries, indicators):
 
 
 def generate_stacked_histogram(data, country, indicators):
+    print(f"📢 Fonction appelée avec: Pays={country}, Indicateurs={indicators}")
+
     """ Crée un histogramme empilé avec des labels propres et une meilleure lisibilité. """
     fig = go.Figure()
 
@@ -278,6 +280,8 @@ def generate_stacked_histogram(data, country, indicators):
 
         years = [col for col in df_filtered.columns if col.isdigit()]
         values = df_filtered[years].values.flatten()
+
+
 
         fig.add_trace(go.Bar(
             x=years,

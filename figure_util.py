@@ -219,7 +219,7 @@ def create_age_structure_chart(df_0_14, df_15_64, df_65_plus, year, countries):
         logging.error("❌ Aucun pays sélectionné ou données manquantes.")
 
     fig.update_layout(
-        title=f"Répartition par âge en {year}",
+        title=f"Répartition par âge en {year} en {country}",
         xaxis_title="Tranche d'âge",
         yaxis_title="Population (%)",
         template="plotly_dark",
