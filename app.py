@@ -109,7 +109,7 @@ app.layout = html.Div(id="app-container",className="container", children=[
 
     # Zone principale (80% de la largeur)
     html.Div(id="main-content",className="main-content", children=[
-        html.H1("Évolution démographique mondiale", id="main-title", className="main-title"),
+        html.H1("Évolution démographique mondiale", id="main-title", className="main-title-class"),
         # En haut : Carte choroplèthe et histogramme/série temporelle
         html.Div(className="top-section", children=[
             # Carte choroplèthe
