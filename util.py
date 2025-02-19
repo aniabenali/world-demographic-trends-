@@ -140,45 +140,46 @@ def generate_age_structure_chart(data, year, country):
     )
 
 
-def generate_donut_chart(data, indicators):
+def generate_donut_chart(data, indicator):
     """
-    Génère un diagramme en anneau pour afficher la répartition des indicateurs sélectionnés par continent.
+    Génère un diagramme en anneau pour afficher la répartition d'un SEUL indicateur sélectionné par continent.
     """
     continent_sums = {}
 
-    for indicator in indicators:
-        if indicator in data:
-            df = data[indicator]
-            if "Country Name" in df.columns:
-                df["Continent"] = df["Country Name"].apply(get_continent)
+    if indicator in data:
+        df = data[indicator]
+        if "Country Name" in df.columns:
+            df["Continent"] = df["Country Name"].apply(get_continent)
 
-                grouped_data = df.groupby("Continent").sum().drop(columns=["Country Name"], errors="ignore")
+            # ✅ Calcul de la MOYENNE au lieu de la somme
+            grouped_data = df.groupby("Continent").mean().drop(columns=["Country Name"], errors="ignore")
 
-                for continent, value in grouped_data.sum(axis=1).items():
-                    if continent not in continent_sums:
-                        continent_sums[continent] = 0
-                    continent_sums[continent] += value
+            # ✅ Prendre la moyenne des valeurs pour l'année la plus récente
+            continent_sums = grouped_data[str(cfg["Years"][-2])].to_dict()  # Année la plus récente
 
-    # Vérification des données
-    if not continent_sums or all(value == 0 for value in continent_sums.values()):
-        logging.warning("⚠️ Données vides pour le donut chart.")
-        return go.Figure()
+    # ✅ Vérification et Normalisation en pourcentage
+    total = sum(continent_sums.values())
+    if total > 0:
+        continent_sums = {key: (value / total) * 100 for key, value in continent_sums.items()}
 
-    # Création du donut chart
+    # ✅ Création du donut chart
     fig = go.Figure()
 
     fig.add_trace(go.Pie(
         labels=list(continent_sums.keys()),
-        values=list(continent_sums.values()),
-        hole=0.4
+        values=[round(v, 2) for v in continent_sums.values()],
+        hole=0.4,
+        textinfo='percent+label',
+        textposition='outside'
     ))
 
     fig.update_layout(
-        title="Répartition des indicateurs sélectionnés par continent",
+        title=f"Répartition de {clean_label(indicator)} par continent",
         template="plotly_dark"
     )
 
     return fig
+
 
 def clean_label(indicator):
     """ Nettoie le nom de l'indicateur en supprimant les underscores et en corrigeant les mots-clés. """
@@ -202,7 +203,8 @@ def clean_label(indicator):
         "pop de 65 plus": "Population 65 ans et plus",
         "migration nette": "Migration nette",
         "croissance pop": "Croissance démographique",
-        "PIB": "Produit Intérieur Brut"
+        "PIB": "Produit Intérieur Brut",
+        "morta":"mortalité"
     }
 
     # Appliquer les corrections

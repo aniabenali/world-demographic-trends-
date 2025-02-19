@@ -7,7 +7,8 @@
     background-color: #1E2B38;
     color: white;
     overflow: hidden;
-    gap: 0px 
+    gap: 0px ;
+    
 }
 /* ✅ Nav-Bar (20% de la largeur, s'étend sur toute la hauteur) */
 .nav-bar {
@@ -38,15 +39,18 @@
 
 .main-content {
     flex-grow: 1;
-    width: 80%;
+    width: calc(100% - 250px); /* ✅ Adapte la largeur en fonction de la navbar */
+    height: 100vh;
     padding: 15px;
-    transition: all 0.3s ease-in-out;
-    overflow: hidden;
-}
-.main-content.expanded {
-    width: 80%;
-    flex: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
     transition: width 0.3s ease-in-out;
+}
+
+/* ✅ Quand la nav-bar est masquée, le contenu prend toute la largeur */
+.main-content.expanded {
+    width: 100%;
 }
 
 .nav-title {
@@ -87,7 +91,6 @@
     box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
     flex: 0.5;
     height: auto; /* Ajuste la hauteur dynamiquement */
-    min-height: 300px; /* Assure un minimum de hauteur */
     display: flex;
     align-items: center; /* Centre verticalement */
     justify-content: center; /* Centre horizontalement */
@@ -222,6 +225,7 @@
     align-items: stretch;
     width: 100%;
     overflow: hidden;
+    height: 286px;
 }
 
 .toggle-button {
@@ -248,20 +252,140 @@
     padding-bottom: 0 !important;
 }
 
-.main-title {
+.main-title-class {
     text-align: center;
     font-size: 26px;
     font-weight: bold;
     color: white;
     margin: 15px 0; /* Ajustement pour le voir */
     padding: 10px;
-    background-color: #2C3E50; /* Couleur de fond pour le démarquer */
+    background-color: #1E2B38; /* Couleur de fond pour le démarquer */
     border-radius: 10px;
     display: block;
     width: 100%;
+    text-align: center;
 }
 
 html {
     overflow: hidden !important;
 }
+
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        width: 100%;
+        height: auto; /* ✅ Permet de s'adapter au contenu */
+        position: fixed; /* ✅ Garde en haut */
+        top: 0;
+        left: 0;
+        z-index: 1001;
+        padding: 10px;
+        background-color: #2C3E50; /* ✅ Pour être bien visible */
+        border-bottom: 2px solid white; /* ✅ Séparation avec le main-content */
+    }
+
+    /* ✅ Garde le bouton toujours visible */
+    .toggle-button {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: #FFD700;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        z-index: 1002;
+    }
+
+    /* ✅ Contenu principal en dessous */
+    .main-content {
+        width: 100% !important;
+        max-width: 100%;
+        height: auto !important;
+        overflow-y: auto !important;
+        margin-top: 20px;
+        padding: 10px;
+        display: block; /* ✅ Garde les éléments en bloc */
+    }
+
+    .nav-bar.hidden + .main-content {
+        margin-top: 0 !important; /* ✅ Aucune marge en haut */
+        padding-top: 0 !important; /* ✅ Supprime tout espace interne */
+    }
+
+    
+
+    .nav-bar.hidden {
+        display: none !important;
+    }
+    
+        .container {
+            display: block; /* ✅ Évite flex qui pose problème */
+            height: auto;
+        }
+    
+    /* ✅ Ajustement des sections */
+    .top-section, .bottom-section {
+        flex-direction: column;
+        height: auto;
+        
+    }
+
+    /* ✅ Supprime l’espace quand la navbar est cachée */
+    .nav-bar.hidden + .main-content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    }
+
+    .top-section, .bottom-section {
+        flex-direction: column;
+        height: auto;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* ✅ Ajustement des graphes */
+    .graph-wrapper {
+        width: 95% !important; /* ✅ Réduit la largeur sans centrer */
+        max-width: 900px !important; /* ✅ Empêche qu'ils soient trop larges */
+        height: auto !important;
+        min-height: 250px;
+        overflow: hidden;
+    }
+
+    
+
+    .indicators-container {
+        display: block !important;
+        width: 100% !important;
+        max-width: 300px !important; /* ✅ Réduit la largeur */
+        position: relative !important;
+        z-index: 1002 !important; /* ✅ Le place au-dessus du graphique */
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.2);
+    }
+    
+    /* ✅ S'assurer que les cases sont visibles */
+    .indicators-container input[type="checkbox"] {
+        display: inline-block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        margin-right: 5px;
+        transform: scale(1.2); /* ✅ Agrandit légèrement */
+    }
+    
+    
+
+}
+
+
+
+
+html, body {
+    height: 100%;
+    overflow-y: auto; /* ✅ Permet le scroll */
+}
+
 
