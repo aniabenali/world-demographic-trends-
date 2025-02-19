@@ -91,7 +91,7 @@ app.layout = html.Div(id="app-container",className="container", children=[
 
         # Menu de sélection pour le donut
         html.Div(className="nav-section", children=[
-            html.Label("Sélectionnez les indicateurs pour le donut :", className="dropdown-label"),
+            html.Label("Sélectionnez les indicateurs par continent  :", className="dropdown-label"),
             dcc.Dropdown(
                 id='donut-indicator-dropdown',
                 options=[
@@ -167,8 +167,8 @@ app.layout = html.Div(id="app-container",className="container", children=[
 )
 def update_graphs(year, country, selected_indicators, selected_histogram_indicators):
     # ✅ Limite la sélection des indicateurs à 3 maximum
-    selected_indicators = selected_indicators[:3] if selected_indicators else []
-    selected_histogram_indicators = selected_histogram_indicators[:3] if selected_histogram_indicators else []
+    selected_indicators = selected_indicators[:4] if selected_indicators else []
+    selected_histogram_indicators = selected_histogram_indicators[:4] if selected_histogram_indicators else []
 
     choropleth_fig = generate_choropleth(
         data,

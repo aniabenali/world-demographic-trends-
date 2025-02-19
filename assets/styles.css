@@ -12,12 +12,12 @@
 }
 /* ✅ Nav-Bar (20% de la largeur, s'étend sur toute la hauteur) */
 .nav-bar {
-    width: 20%;
-    min-width: 180px; /* ✅ Empêche le menu de devenir trop large */
-    max-width: 180px; /* ✅ Garde une largeur fixe */
+    width: 15%;
+    min-width: 150px; /* ✅ Empêche le menu de devenir trop large */
+    max-width: 150px; /* ✅ Garde une largeur fixe */
     height: 92%; /* ✅ Utilise toute la hauteur de l'écran */
     background-color: #2C3E50;
-    padding: 20px;
+    padding: 15px;
     border-radius: 12px;
     border: 2px solid white;
     box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
@@ -26,6 +26,7 @@
     transition: transform 0.3s ease-in-out; /* ✅ Animation fluide */
     margin-top: 15px;
     margin-left: 15px;
+
 }
 
 .nav-bar.hidden {
@@ -39,14 +40,15 @@
 
 .main-content {
     flex-grow: 1;
-    width: calc(100% - 250px); /* ✅ Adapte la largeur en fonction de la navbar */
-    height: 100vh;
-    padding: 15px;
+    width: 100%;  /* ✅ Utilise toute la largeur disponible */
+    height: auto;
+    padding: 10px;
     overflow: auto;
     display: flex;
     flex-direction: column;
-    transition: width 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
+
 
 /* ✅ Quand la nav-bar est masquée, le contenu prend toute la largeur */
 .main-content.expanded {
@@ -306,6 +308,8 @@ html {
         margin-top: 20px;
         padding: 10px;
         display: block; /* ✅ Garde les éléments en bloc */
+        margin-top: 15px;
+        margin-left: 15px;
     }
 
     .nav-bar.hidden + .main-content {
@@ -347,11 +351,15 @@ html {
     /* ✅ Ajustement des graphes */
     .graph-wrapper {
         width: 95% !important; /* ✅ Réduit la largeur sans centrer */
-        max-width: 900px !important; /* ✅ Empêche qu'ils soient trop larges */
+        max-width: 3000px !important; /* ✅ Empêche qu'ils soient trop larges */
         height: auto !important;
         min-height: 250px;
         overflow: hidden;
+        gap: 10;
+       
     }
+
+
 
     
 
@@ -381,10 +389,86 @@ html {
 }
 
 
-
-
 html, body {
     height: 100%;
     overflow-y: auto; /* ✅ Permet le scroll */
 }
 
+@media screen and (max-width: 1400px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        overflow-y: auto;
+    }
+
+    .top-section, .bottom-section {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .graph-wrapper {
+        width: 90% !important; /* ✅ Pour éviter le débordement */
+        max-width: 3000px !important;
+        min-height: 200px;
+        height: auto;
+    }
+
+    .indicators-container {
+        width: 100% !important;
+        max-width: 400px !important; /* ✅ Empêche que ça devienne trop large */
+        position: relative !important;
+        z-index: 1002 !important;
+    }
+
+
+.donut-container {
+    flex: 1;
+    max-width: 800px !important; /* ✅ Empêche qu'il prenne trop de place */
+    height: auto !important;
+}
+
+.nav-bar {
+    width: 100%;
+    height: auto; /* ✅ Permet de s'adapter au contenu */
+    position: fixed; /* ✅ Garde en haut */
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    padding: 10px;
+    background-color: #2C3E50; /* ✅ Pour être bien visible */
+    border-bottom: 2px solid white; /* ✅ Séparation avec le main-content */
+}
+
+/* ✅ Garde le bouton toujours visible */
+.toggle-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #FFD700;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 1002;
+}
+
+.nav-bar.hidden + .main-content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    }
+
+    .main-content {
+        width: 100% !important;
+        max-width: 100%;
+        height: auto !important;
+        overflow-y: auto !important;
+        margin-top: 20px;
+        padding: 10px;
+        display: block; /* ✅ Garde les éléments en bloc */
+    }
+
+
+}
